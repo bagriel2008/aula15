@@ -1,0 +1,166 @@
+// // javascriptCopy code
+
+// // exercicio 1
+
+// const pessoa = {
+//     nome: "Alice",
+//     idade: 25,
+//     temCarteiraDeMotorista: true
+// }
+
+// if (pessoa.idade >= 18 && pessoa.temCarteiraDeMotorista) {
+//     console.log(`${pessoa.nome} pode dirigir!`)
+// } else {
+//     console.log(`${pessoa.nome} não pode dirigir.`)
+// }
+
+// //a)esta dizendo que se a pessoa tiver 18 anos ou mais e tiver uma carteira de motorista ela vai poder dirigire e se ela nao tiver os requisitos ela nao podera dirigir 
+
+// //b)esse programa serve para determinar se a pesoa pode ou nao dirigir
+
+
+// const animal = {
+//     nome: "Leão",
+//     carnivoro: true
+// }
+// if (animal.carnivoro) {
+//     console.log(`${animal.nome} é um animal carnívoro.`)
+// } else {
+//     console.log(`${animal.nome} não é um animal carnívoro.`)
+// }
+
+// //a)determinar se o animal citado no objeto é carnivoro
+// //b)Leao é um animal carnivoro
+
+// const numero = 10;
+// if (numero > 5) {
+//     console.log("O número é maior do que 5.");
+// } else {
+//     console.log("O número é menor ou igual a 5.");
+// }
+
+// if (numero % 2 === 0) {
+//     console.log("O número é par.");
+// } else {
+//     console.log("O número é ímpar.");
+// }
+
+//a)o codigo determina se o numnero 10 é maior ou menor a 5 e se ele é impar ou par
+//b)sera impresso "o numero é maior que 5" e "O número é par."
+
+// =================================================================================================
+
+//exercicio 1
+// const idade = prompt("qual a sua idade")
+
+// if (idade >= 18) {
+//     console.log("voce é maior de idade")
+// } else {
+//     console.log("voce nao é maior de idade")
+// }
+
+//exercicio 2
+
+// const turno = prompt("me fale o seu turno")
+
+// if (turno === "M") {
+//     console.log("bom dia")
+// } else if (turno === "N") {
+//     console.log("boa noite")
+// } else if (turno === "T") {
+//     console.log("boa tarde")
+// } else {
+//     console.log("nada foi digitado")
+// };
+
+//exercicio 3
+// const turno = prompt("me fale qual turno")
+
+// switch (turno) {
+//     case "M":
+//         console.log("bom dia")
+//         break;
+//     case "T":
+//         console.log("boa tarde")
+//         break;
+//     case "N":
+//         console.log("boa noite")
+//         break;
+//     default:
+//         console.log("nao encontrado")
+//         break;
+// }
+
+//exercicio 4
+// const aluno = {
+//     nome:prompt("qual o seu nome?"),
+//     idade:prompt("qual a sua idade?"),
+//     tipoDeCurso:prompt("voce esta matriculado em algum curso"),
+//     temBolsa:prompt("voce tem uma bolsa?")
+// }
+
+// if (aluno.idade < 30 && aluno.tipoDeCurso === "sim" && aluno.temBolsa === "nao"){
+//     console.log("voce pode se candidatar a uma bolsa de estudos")
+// }else{
+//     console.log("Desculpe, você não atende aos requisitos para a bolsa")
+// }   
+
+//exercicio 5
+
+// const produto = {
+//     nome: 'batata',
+//     preco: Number(prompt("fale um valor para a batata")),
+//     desconto: Number(prompt("me fale um desconto para a batata")),
+//     freteGratis: (prompt("ela vai ter frete gratis? (true/false)"))
+// }
+// var precocomdesconto = Number(((produto.preco * produto.desconto) / 100));
+// var resultadoDoDesconto = (produto.preco - precocomdesconto)
+
+// if (produto.freteGratis === 'true') {
+//     if (produto.desconto === 0) {
+//         console.log("preço final", produto.preco, produto.freteGratis)
+//     } else { console.log("preço final", resultadoDoDesconto, "com fretes grátis") }
+
+// } else if (produto.freteGratis === 'false') {
+//     if (produto.desconto === 0) {
+//         console.log(produto.preco)
+//     } else{console.log("preço final", resultadoDoDesconto)}
+// }
+
+//exercicio extra 1
+
+// function calculo(a, b) {
+//     let soma =  [a + b, a - b, a * b, a / b]
+//     return soma
+// }
+
+// let n1 = Number(prompt("um numero"))
+// let n2 = Number(prompt("outro numero"))
+
+// const numeros = calculo(n1, n2)
+
+// console.log(numeros)
+
+//exercicio extra 2
+
+// function calcularMedia() {
+//     let numeros = [2 + 8 + 9 + 6 + 4]
+//     return numeros / 5
+// };
+
+// const resultado = calcularMedia();
+
+// console.log(resultado);
+
+//exercicio extra 3
+
+// const testes = prompt("fale uma  palavra").toString();
+
+// const checkPalindrome = testes.split('');
+
+// let sla = checkPalindrome.reverse()
+
+// sla = sla.join('');
+
+// const resultados = sla === testes
+// console.log(resultados);
